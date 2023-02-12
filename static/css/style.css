@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  img, h1, h2 {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: #FFB6C1;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+.container {
+    display: flex; 
+    align-items: center;
+}
+
+.logo {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90px;
+	height: 90px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.015);
+    margin-right: 2em;
+}
+
+.logo img {
+	height: 70%;
+	width: 70%;
+	z-index: 2;
+	filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.12));
+}
+
+.logo .background {
+	position: absolute;
+	z-index: 1;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scale(2);
+	filter: blur(13px) opacity(0.2);
+    background-color: rgb(0, 0, 0);
+}
+
+h1, h2, p {
+    color: #ffffff;
+    font-family: Inter, sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper img {
+    width: 30px;
+    margin-left: .5em;
+}
+
+.wrapping-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer {
+    position: fixed;
+    bottom: 15px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+}
+
+.footer-text {
+    text-align: center;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: .5em;
+        width: 70px;
+        height: 70px;
+        
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .wrapper img {
+        width: 40px;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .wrapping-wrapper {
+      flex-direction: column;
+      align-items: center;  
+    }
+}
